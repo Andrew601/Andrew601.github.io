@@ -4687,20 +4687,3 @@ input, select, textarea {
 		}
 
 	}
-/* Styles for the blog post */
-.paragraph-with-image {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 2em;
-}
-
-.image1 img {
-    max-width: 100%;
-    height: auto;
-}
-
-.text {
-    flex: 1;
-    margin: 0 1em;
-}
