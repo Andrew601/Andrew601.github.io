@@ -17,9 +17,11 @@
 				margin: 0 20px 20px 0; /* Add space around the image */
 			}
 
-			.wrap-image:last-child {
-				margin-right: 0;
-			}
+			.wrap-image img {
+                max-width: 100%; /* Set a maximum width for the images */
+                height: auto; /* Ensure the aspect ratio is maintained */
+                display: block; /* Make the image a block element */
+}
 
 			.right-image {
 				flex-direction: row-reverse; /* Reverse the order for right-aligned image */
