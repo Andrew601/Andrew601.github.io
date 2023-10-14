@@ -4687,3 +4687,20 @@ input, select, textarea {
 		}
 
 	}
+.image-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	}
+	
+	.wrap-image {
+	flex: 0 0 48%; /* Adjust the width of the image */
+	margin: 0 20px 20px 0; /* Add space around the image */
+	}
+	
+	.wrap-image:last-child {
+	margin-right: 0;
+	}
+	
+	.right-image {
+	flex-direction: row-reverse; /* Reverse the order for right-aligned image */
+	}
