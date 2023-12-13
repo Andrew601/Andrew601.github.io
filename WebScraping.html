@@ -62,3 +62,43 @@
 					</div>
 
 					<!-- Content of your article goes here -->
+					<p>The Nation Basketball Association (NBA) is currently at an all-time high in scoring. With records never thought possible to be broken being getting shattered, teams reaching scores over 150 points in single games, the most players having 30, 40, 50 and even 60-point games in a season. As a basketball fan who watches the NBA, this had me wondering what has changed? This question prompted me to take a look at the data and get to the bottom of how offense and more specifically shooting and scoring has changed in the last 20 years.</p>
+
+					<p>	To find an answer I decided to look at data starting all the way back in 2002. My goal was to see if there were clear patterns or trends that could explain what was happening. This blog post will walk you through my data collection process. We will look at what data I chose to collect, why I chose it, how I got it, and what I did after getting it.</p>
+
+
+					<h3>Choosing the Data</h3>
+
+					<p>I decided that the best way to understand the question I had was to look at shot data, primarily the top 5 leading scorers of both the 2002-2003 and the 2022-2023 seasons. I figured that they were scoring the most, so there were probably trends in their shooting. The top 5 scorers of the 2002-2003 season were Kobe Bryant, Tracy McGrady, Allen Iverson, Paul Pierce, and Dirk Nowitzki. The top 5 scorers of last year’s season were Jayson Tatum, Joel Embiid, Luka Doncic, Shai Gilgeous-Alexander, and Giannis Antetokounmpo. The data I collected included every shot taken by these players during the season, what type of shot it was, how far it was from the hoop, the result of the shot, the date and time the shot was taken, and finally the positional coordinates on the court where the shot was taken. While some of these variables such as date and time weren’t as important, other variable proved very valuable in finding patterns in the data. I also collected season by season data that included field goals attempted and made, 3 pointers attempted and made, free throws attempted and made, and shooting percentages for these variables.</p>
+
+
+					<h3>Collecting the Data</h3>
+
+					<p>Collecting the data proved to be difficult at first. There were no premade public datasets containing the data I needed, so I knew I had to find another way to access it. By using tools called BeautifulSoup and Selenium I was able to scrape the web for the data. It is important to note that there are ethics to scraping data on the web, so I made sure not to use anything that wasn’t publicly available and free for use. I scraped the shot data from a website called basketball-reference.com, and I scraped my league shooting data from sportskeeda.com. The way BeautifulSoup works is it looks at the html code of a website and from there you can pull the information you need. The data pulled from the website however is not usually very user friendly and requires some work to get it in the right format.</p>
+
+
+					<h3>Cleaning the Data</h3>
+					<p>Cleaning data is an important part of data collection. After scraping data for all the players I had chosen, I combined it into one large dataset. I renamed the variables and removed things that were unnecessary or confusing. I made sure to format the variables in a way that they would be easy to use later on such as removing “feet” from the end of every distance and converting it to an integer variable. Cleaning the data proved to be very helpful and all allowed me to create the visuals I wanted and analyze the data more efficiently.</p>
+
+					<h3>Conclusion</h3>
+					<p>This is a good start to finding answers to my question. The data I collected ended up being extremely useful. I only collected shot data from the 2002-2003 and the 2022-2023 seasons, and it totaled to more than 15,000 rows. In the future it could be good to collect more data for the seasons in between, but for the purpose of this project, the data I had was sufficient. In my next blog post I will dive into the analytical part of this project, but in the meantime if your interest has been piqued, feel free to take a look at my GitHub repository containing the full code and data. I hope that you have found something here to be useful or interesting and if you enjoyed it, I encourage you to try it on your own.</p>
+
+				</article>
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<!-- Footer content goes here -->
+			</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
